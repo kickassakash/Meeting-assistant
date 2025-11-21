@@ -26,7 +26,7 @@ A full-stack web application that helps engineering teams organize meetings, ext
 
 ### AI & Agent
 - **Google Gemini API**: Advanced language model for summarization, extraction, and Q&A
-- **LangChain**: Framework for building AI applications
+- **Langgraph**: Framework for building AI applications
 - **Custom Keyword Indexer**: Hashmap-based search for efficient meeting retrieval
 
 ## 📋 Prerequisites
@@ -200,55 +200,4 @@ Using Google Gemini API, the application:
 ### AI
 - `POST /ask-ai/` - Ask a question about meetings
 
-## 🎯 Design Decisions
 
-1. **SQLite over PostgreSQL**: Simple, serverless, and perfect for small teams
-2. **Keyword Search over Vector DB**: Simpler implementation, faster for keyword-based queries
-3. **Gemini API**: Cost-effective and powerful for summarization and extraction
-4. **Streamlit**: Rapid development with Python, perfect for data-focused UIs
-5. **No Authentication**: Simplified for small team use (can be added later)
-
-## 🚀 Future Improvements
-
-- **Vector Search**: Implement semantic search using embeddings for more accurate retrieval
-- **Real-time Collaboration**: Add WebSocket support for live meeting updates
-- **Email Notifications**: Send reminders for action item due dates
-- **Meeting Analytics**: Dashboard with insights, trends, and statistics
-- **Export Functionality**: Download meetings and action items as PDF or CSV
-- **User Authentication**: Add user accounts and permissions
-- **Calendar Integration**: Sync with Google Calendar or Outlook
-- **Audio Transcription**: Automatically transcribe meeting recordings
-- **Advanced Filtering**: Filter meetings by date range, tags, or participants
-
-## 🐛 Troubleshooting
-
-### Backend not starting
-- Ensure GEMINI_API_KEY is set
-- Check that port 8000 is not already in use
-- Verify all dependencies are installed
-
-### Frontend not connecting to backend
-- Ensure backend is running on port 8000
-- Check BACKEND_URL in environment variables
-- Verify no firewall blocking the connection
-
-### AI features not working
-- Verify GEMINI_API_KEY is valid
-- Check your Google AI Studio API quota
-- Review backend logs for error messages
-
-## 📄 License
-
-This project is open source and available under the MIT License.
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-## 👥 Support
-
-For questions or support, please open an issue in the repository.
-
----
-
-Built with ❤️ using Streamlit, FastAPI, and Google Gemini
