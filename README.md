@@ -1,8 +1,8 @@
-# 📝 Smart Meeting & Task Assistant
+# Smart Meeting & Task Assistant
 
 A full-stack web application that helps engineering teams organize meetings, extract action items using AI, and ask questions about past discussions.
 
-## 🚀 Features
+## Features
 
 - **Meeting Management**: Create, edit, and view meetings with participants, dates, and detailed notes
 - **AI-Powered Summarization**: Automatically generate concise summaries of meeting notes using Google Gemini
@@ -29,7 +29,7 @@ A full-stack web application that helps engineering teams organize meetings, ext
 - **Langgraph**: Framework for building AI applications
 - **Custom Keyword Indexer**: Hashmap-based search for efficient meeting retrieval
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Python 3.11+
 - Google Gemini API Key (get one at https://aistudio.google.com/apikey)
@@ -38,12 +38,23 @@ A full-stack web application that helps engineering teams organize meetings, ext
 
 1. **Clone or access the project**
 
-2. **Install dependencies**:
+2. **create a virtual environment and Install dependencies**:
+   ```bash
+   python -m venv meeting_venv
+   ```
+   now in windows:
+   ```bash
+   venv\Scripts\activate
+   ```
+   Mac/Linux:
+   ```bash
+   source venv/bin/activate
+   ```
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Set up environment variables**:
+4. **Set up environment variables**:
    The application requires a `GEMINI_API_KEY` environment variable. On Replit, this is automatically managed through Secrets. For local development, create a `.env` file:
    ```
    GEMINI_API_KEY=your_gemini_api_key_here
@@ -51,10 +62,10 @@ A full-stack web application that helps engineering teams organize meetings, ext
    BACKEND_URL=http://localhost:8000
    ```
 
-4. **Initialize the database**:
+5. **Initialize the database**:
    The database is automatically initialized when the backend starts for the first time.
 
-## 🏃 Running the Application
+## Running the Application
 
 ### Running Both Services
 
@@ -79,7 +90,7 @@ The application consists of two services that run simultaneously:
 
 Both workflows are pre-configured and will start automatically. Just click the "Run" button!
 
-## 📖 Usage Guide
+## Usage Guide
 
 ### Creating a Meeting
 
